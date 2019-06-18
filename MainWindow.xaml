@@ -1,0 +1,20 @@
+﻿ <Window x:Class="FlappyBird.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlappyBird"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="350" Background="Blue" ResizeMode="NoResize">
+    <Grid>
+        <Image Name="bgImage" Source="p7bjacr15ad01.jpg" Stretch="UniformToFill"/>
+        <Canvas x:Name="canvas">
+            <StackPanel x:Name="stackpanel" Canvas.Top="180" Canvas.Left="150"  >
+                <Button x:Name="btnResume" Click="BtnResume_Click" Visibility="Hidden">Resume</Button>
+                <Button x:Name="btnRestart" Click="BtnRestart_Click" Visibility="Hidden">Restart</Button>
+                <Button x:Name="btnExit" Click="BtnExit_Click" Visibility="Hidden">Exit</Button>
+            </StackPanel>
+        </Canvas>
+        <Label x:Name="lblOutput" Foreground="White" FontSize="65" ></Label>
+    </Grid>
+</Window>
